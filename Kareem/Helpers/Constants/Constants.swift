@@ -12,7 +12,7 @@ enum Constants {
   
   enum urls {
     #warning("Add your host")
-    static let host = "kareem-79990.firebaseio.com"
+    static let host = ""
     static let scheme = "https"
     static let git = "https://github.com/Abedalkareem/Kareem-iOS"
   }
