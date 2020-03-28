@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-Kareem-KareemUITests/Pods-Kareem-KareemUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/LanguageManager-iOS/LanguageManager_iOS.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxCoreLocation/RxCoreLocation.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework
+${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework
+${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework

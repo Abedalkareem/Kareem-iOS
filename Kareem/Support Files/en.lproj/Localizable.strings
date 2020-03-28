@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Kareem
+
+  Created by abedalkareem omreyh on 10/12/2019.
+  Copyright © 2019 abedalkareem. All rights reserved.
+*/
+
+"splash_screen_logo" = "Kareem";
+
+"intro_screen_logo" = "Kareem";
+"intro_screen_text" = "We finding you better ways to move, work, and succeed.";
+"intro_screen_slogan" = "Everyone's private driver";
+"intro_screen_button" = "Continue";
+
+"update_screen_text" = "New update is here, update the app to get the new features";
+"update_screen_button" = "Update now!";
+
+"main_screen_confirm_button" = "Confirm pickup";
+"main_screen_add_dropoff_button" = "Add dropoff";
+"main_screen_book_button" = "Book a car!";
+
+"pin_view_time_unit" = "mins";

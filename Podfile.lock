@@ -1,0 +1,72 @@
+PODS:
+  - GoogleMaps (3.8.0):
+    - GoogleMaps/Maps (= 3.8.0)
+  - GoogleMaps/Base (3.8.0)
+  - GoogleMaps/Maps (3.8.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.8.0):
+    - GoogleMaps/Base (= 3.8.0)
+  - LanguageManager-iOS (1.2.0)
+  - RxCocoa (5.1.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxCoreLocation (1.4.1):
+    - RxCoreLocation/Core (= 1.4.1)
+  - RxCoreLocation/Core (1.4.1):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxGoogleMaps (4.0.0):
+    - GoogleMaps (~> 3)
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.0)
+  - Swinject (2.6.2)
+  - SwinjectAutoregistration (2.6.1):
+    - Swinject (~> 2.6)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.6)
+
+DEPENDENCIES:
+  - GoogleMaps (= 3.8.0)
+  - GooglePlaces (= 3.8.0)
+  - LanguageManager-iOS (= 1.2.0)
+  - RxCocoa (= 5.1.0)
+  - RxCoreLocation (= 1.4.1)
+  - RxGoogleMaps (= 4.0.0)
+  - RxSwift (= 5.1.0)
+  - Swinject (= 2.6.2)
+  - SwinjectAutoregistration (= 2.6.1)
+  - SwinjectStoryboard (= 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - GoogleMaps
+    - GooglePlaces
+    - LanguageManager-iOS
+    - RxCocoa
+    - RxCoreLocation
+    - RxGoogleMaps
+    - RxRelay
+    - RxSwift
+    - Swinject
+    - SwinjectAutoregistration
+    - SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
+  GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
+  LanguageManager-iOS: 516c4f088435c83cbdbddfc5179f88e4e0d39eb4
+  RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
+  RxCoreLocation: 85e9a3310c22619404dcbf91258d29c44429eea8
+  RxGoogleMaps: 5d8a91a26dc9e3f703c5be09424e3ecf7f607328
+  RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
+  Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
+  SwinjectAutoregistration: d0de7e48db3601b8b130f2f84e5a8399e0224135
+  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
+
+PODFILE CHECKSUM: 5e09d22b6970cd9e88040e88f726fb2d82787df4
+
+COCOAPODS: 1.9.0

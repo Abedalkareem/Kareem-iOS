@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--App Status View Controller-->
+        <scene sceneID="AKH-Ot-NUe">
+            <objects>
+                <viewController storyboardIdentifier="AppStatusViewController" id="4sm-yh-j8f" customClass="AppStatusViewController" customModule="Kareem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H6r-sf-rTw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new_update_background" translatesAutoresizingMaskIntoConstraints="NO" id="qgt-xm-EG5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIP-hU-X5U">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="Primary Color"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVl-zZ-3n3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSy-Km-GRS" customClass="AppLabel" customModule="Kareem" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="438" width="314" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="Text Over Primary Color"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="update_screen_text"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAppLogo" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titleFont">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jeh-1U-Out" customClass="AppButton" customModule="Kareem" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="816" width="314" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isWhiteButton" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="update_screen_button"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="update:" destination="4sm-yh-j8f" eventType="touchUpInside" id="ewU-xa-shk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bSy-Km-GRS" firstAttribute="centerX" secondItem="RVl-zZ-3n3" secondAttribute="centerX" id="0ly-sa-xhj"/>
+                                    <constraint firstItem="Jeh-1U-Out" firstAttribute="leading" secondItem="RVl-zZ-3n3" secondAttribute="leading" constant="50" id="At1-kQ-Jeq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jeh-1U-Out" secondAttribute="bottom" constant="50" id="Cbl-YA-xjb"/>
+                                    <constraint firstItem="bSy-Km-GRS" firstAttribute="centerY" secondItem="RVl-zZ-3n3" secondAttribute="centerY" id="arQ-4P-1l1"/>
+                                    <constraint firstItem="bSy-Km-GRS" firstAttribute="leading" secondItem="RVl-zZ-3n3" secondAttribute="leading" constant="50" id="nYB-hj-6Sn"/>
+                                    <constraint firstItem="Jeh-1U-Out" firstAttribute="centerX" secondItem="RVl-zZ-3n3" secondAttribute="centerX" id="rZh-Of-1J9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qgt-xm-EG5" firstAttribute="top" secondItem="H6r-sf-rTw" secondAttribute="top" id="0JK-Os-nSw"/>
+                            <constraint firstItem="WIP-hU-X5U" firstAttribute="leading" secondItem="8Ce-6q-TIY" secondAttribute="leading" id="1Uw-ER-2yF"/>
+                            <constraint firstItem="qgt-xm-EG5" firstAttribute="leading" secondItem="8Ce-6q-TIY" secondAttribute="leading" id="5Ak-fn-lDv"/>
+                            <constraint firstItem="WIP-hU-X5U" firstAttribute="trailing" secondItem="8Ce-6q-TIY" secondAttribute="trailing" id="AVH-mk-bWt"/>
+                            <constraint firstAttribute="bottom" secondItem="WIP-hU-X5U" secondAttribute="bottom" id="CkK-fz-f3g"/>
+                            <constraint firstAttribute="bottom" secondItem="RVl-zZ-3n3" secondAttribute="bottom" id="NJl-TM-Ihy"/>
+                            <constraint firstItem="RVl-zZ-3n3" firstAttribute="top" secondItem="H6r-sf-rTw" secondAttribute="top" id="eTO-cw-5Tl"/>
+                            <constraint firstItem="qgt-xm-EG5" firstAttribute="trailing" secondItem="8Ce-6q-TIY" secondAttribute="trailing" id="emc-zw-LVA"/>
+                            <constraint firstAttribute="bottom" secondItem="qgt-xm-EG5" secondAttribute="bottom" id="kXe-jm-dg0"/>
+                            <constraint firstItem="RVl-zZ-3n3" firstAttribute="trailing" secondItem="8Ce-6q-TIY" secondAttribute="trailing" id="mYa-48-vYG"/>
+                            <constraint firstItem="WIP-hU-X5U" firstAttribute="top" secondItem="H6r-sf-rTw" secondAttribute="top" id="uvI-MJ-GwG"/>
+                            <constraint firstItem="RVl-zZ-3n3" firstAttribute="leading" secondItem="8Ce-6q-TIY" secondAttribute="leading" id="xUF-5m-nVc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Ce-6q-TIY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJn-sy-bbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="-597.32142857142856"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="BYZ-38-t0r" customClass="SplashViewController" customModule="Kareem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clx-b7-xmD" customClass="AppLabel" customModule="Kareem" customModuleProvider="target">
+                                <rect key="frame" x="186" y="438" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="Text Over Primary Color"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="splash_screen_logo"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAppLogo" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Primary Color"/>
+                        <constraints>
+                            <constraint firstItem="clx-b7-xmD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4q1-ih-q4l"/>
+                            <constraint firstItem="clx-b7-xmD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vYm-LV-0c8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+        <!--Intro View Controller-->
+        <scene sceneID="1Xs-pZ-qT1">
+            <objects>
+                <viewController storyboardIdentifier="IntroViewController" id="rL6-Et-sqX" customClass="IntroViewController" customModule="Kareem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vqa-mz-GDm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_screen_background" translatesAutoresizingMaskIntoConstraints="NO" id="rTD-Jy-OKJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wz-gd-fxD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="Primary Color"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNn-ef-n8G">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK6-OY-ltH" customClass="AppLabel" customModule="Kareem" customModuleProvider="target">
+                                        <rect key="frame" x="186" y="288" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="Text Over Primary Color"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="intro_screen_logo"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isAppLogo" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQb-qX-nUI" customClass="AppLabel" customModule="Kareem" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="316.5" width="314" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="Text Over Primary Color"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="intro_screen_slogan"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titleFont">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSF-B5-ek7" customClass="AppLabel" customModule="Kareem" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="345" width="314" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" name="Text Over Primary Color"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="intro_screen_text"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="subBodyFont">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEV-rS-t23" customClass="AppButton" customModule="Kareem" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="816" width="314" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isWhiteButton" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="intro_screen_button"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="continue:" destination="rL6-Et-sqX" eventType="touchUpInside" id="zgC-YN-loy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sSF-B5-ek7" firstAttribute="centerX" secondItem="yNn-ef-n8G" secondAttribute="centerX" id="6WV-gk-TpF"/>
+                                    <constraint firstItem="aQb-qX-nUI" firstAttribute="top" secondItem="JK6-OY-ltH" secondAttribute="bottom" constant="8" id="DTt-PI-SLV"/>
+                                    <constraint firstItem="qEV-rS-t23" firstAttribute="leading" secondItem="yNn-ef-n8G" secondAttribute="leading" constant="50" id="O2Y-cQ-Uyh"/>
+                                    <constraint firstItem="qEV-rS-t23" firstAttribute="centerX" secondItem="yNn-ef-n8G" secondAttribute="centerX" id="SlQ-Cd-Zeu"/>
+                                    <constraint firstAttribute="bottom" secondItem="qEV-rS-t23" secondAttribute="bottom" constant="50" id="SyS-pw-5Io"/>
+                                    <constraint firstItem="aQb-qX-nUI" firstAttribute="leading" secondItem="yNn-ef-n8G" secondAttribute="leading" constant="50" id="Ugu-TY-W1q"/>
+                                    <constraint firstItem="JK6-OY-ltH" firstAttribute="centerX" secondItem="yNn-ef-n8G" secondAttribute="centerX" id="XO0-eL-ahR"/>
+                                    <constraint firstItem="aQb-qX-nUI" firstAttribute="centerX" secondItem="yNn-ef-n8G" secondAttribute="centerX" id="mEz-or-bOR"/>
+                                    <constraint firstItem="sSF-B5-ek7" firstAttribute="top" secondItem="aQb-qX-nUI" secondAttribute="bottom" constant="8" id="pl2-ok-QbR"/>
+                                    <constraint firstItem="sSF-B5-ek7" firstAttribute="leading" secondItem="yNn-ef-n8G" secondAttribute="leading" constant="50" id="rZd-2i-9xH"/>
+                                    <constraint firstItem="JK6-OY-ltH" firstAttribute="centerY" secondItem="yNn-ef-n8G" secondAttribute="centerY" constant="-150" id="x5F-Wv-CvB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yNn-ef-n8G" firstAttribute="top" secondItem="Vqa-mz-GDm" secondAttribute="top" id="Cyc-V4-Ndt"/>
+                            <constraint firstItem="yNn-ef-n8G" firstAttribute="leading" secondItem="CSS-MJ-A8e" secondAttribute="leading" id="Rx2-xn-laD"/>
+                            <constraint firstItem="3wz-gd-fxD" firstAttribute="trailing" secondItem="CSS-MJ-A8e" secondAttribute="trailing" id="X2g-Ps-ce8"/>
+                            <constraint firstItem="rTD-Jy-OKJ" firstAttribute="leading" secondItem="CSS-MJ-A8e" secondAttribute="leading" id="Xhz-yh-L7x"/>
+                            <constraint firstAttribute="bottom" secondItem="rTD-Jy-OKJ" secondAttribute="bottom" id="cP7-w1-sTR"/>
+                            <constraint firstItem="yNn-ef-n8G" firstAttribute="trailing" secondItem="CSS-MJ-A8e" secondAttribute="trailing" id="d5n-HK-Vmw"/>
+                            <constraint firstAttribute="bottom" secondItem="yNn-ef-n8G" secondAttribute="bottom" id="fV0-p4-DJ7"/>
+                            <constraint firstAttribute="bottom" secondItem="3wz-gd-fxD" secondAttribute="bottom" id="g6K-rr-qHU"/>
+                            <constraint firstItem="rTD-Jy-OKJ" firstAttribute="trailing" secondItem="CSS-MJ-A8e" secondAttribute="trailing" id="lcb-RH-ics"/>
+                            <constraint firstItem="3wz-gd-fxD" firstAttribute="leading" secondItem="CSS-MJ-A8e" secondAttribute="leading" id="xiB-bF-hsu"/>
+                            <constraint firstItem="rTD-Jy-OKJ" firstAttribute="top" secondItem="Vqa-mz-GDm" secondAttribute="top" id="zH7-mk-sMb"/>
+                            <constraint firstItem="3wz-gd-fxD" firstAttribute="top" secondItem="Vqa-mz-GDm" secondAttribute="top" id="zVK-OL-uaQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CSS-MJ-A8e"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bt1-th-zJ1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="918.84057971014499" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="intro_screen_background" width="934" height="1401"/>
+        <image name="new_update_background" width="934" height="1400"/>
+        <namedColor name="Primary Color">
+            <color red="0.2196078431372549" green="0.23529411764705882" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Over Primary Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

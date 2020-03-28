@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="U0u-vS-b0i">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0s-Yu-o58" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="MainViewController" id="Bsu-I7-OOC" customClass="MainViewController" customModule="Kareem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sR4-qf-6SE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZi-Hu-9aA" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krq-fN-TwY" customClass="DPLocationView" customModule="Kareem" customModuleProvider="target">
+                                <rect key="frame" x="16" y="60" width="382" height="52.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="200" constant="60" id="LOr-pt-UXq"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uk3-Ml-YsW" customClass="AppButton" customModule="Kareem" customModuleProvider="target">
+                                <rect key="frame" x="16" y="796" width="382" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="main_screen_confirm_button"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecondaryButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="confirm:" destination="Bsu-I7-OOC" eventType="touchUpInside" id="Vnm-LR-KTe"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Jw-6t-86h" customClass="SelectedCarTypeView" customModule="Kareem" customModuleProvider="target">
+                                <rect key="frame" x="16" y="738" width="382" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="meT-34-lvu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Uk3-Ml-YsW" firstAttribute="leading" secondItem="2jL-Hj-nrF" secondAttribute="leading" constant="16" id="6UG-cb-ASK"/>
+                            <constraint firstItem="2jL-Hj-nrF" firstAttribute="bottom" secondItem="Uk3-Ml-YsW" secondAttribute="bottom" constant="16" id="IMS-Pz-ymu"/>
+                            <constraint firstItem="cZi-Hu-9aA" firstAttribute="trailing" secondItem="2jL-Hj-nrF" secondAttribute="trailing" id="PkO-JG-9sM"/>
+                            <constraint firstItem="cZi-Hu-9aA" firstAttribute="top" secondItem="sR4-qf-6SE" secondAttribute="top" id="S2l-cf-gXe"/>
+                            <constraint firstItem="2jL-Hj-nrF" firstAttribute="trailing" secondItem="7Jw-6t-86h" secondAttribute="trailing" constant="16" id="W0r-PP-Dzo"/>
+                            <constraint firstItem="Uk3-Ml-YsW" firstAttribute="top" secondItem="7Jw-6t-86h" secondAttribute="bottom" constant="8" id="bp3-eJ-Adl"/>
+                            <constraint firstItem="2jL-Hj-nrF" firstAttribute="trailing" secondItem="krq-fN-TwY" secondAttribute="trailing" constant="16" id="dhS-Nd-dgg"/>
+                            <constraint firstAttribute="bottom" secondItem="cZi-Hu-9aA" secondAttribute="bottom" id="hGT-5K-Km3"/>
+                            <constraint firstItem="krq-fN-TwY" firstAttribute="top" secondItem="2jL-Hj-nrF" secondAttribute="top" constant="16" id="n1s-rQ-iCe"/>
+                            <constraint firstItem="krq-fN-TwY" firstAttribute="leading" secondItem="2jL-Hj-nrF" secondAttribute="leading" constant="16" id="nS4-be-Vb0"/>
+                            <constraint firstItem="7Jw-6t-86h" firstAttribute="leading" secondItem="2jL-Hj-nrF" secondAttribute="leading" constant="16" id="qn1-dh-Llv"/>
+                            <constraint firstItem="cZi-Hu-9aA" firstAttribute="leading" secondItem="2jL-Hj-nrF" secondAttribute="leading" id="wRD-CF-4od"/>
+                            <constraint firstItem="2jL-Hj-nrF" firstAttribute="trailing" secondItem="Uk3-Ml-YsW" secondAttribute="trailing" constant="16" id="xbp-xZ-mpj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2jL-Hj-nrF"/>
+                    </view>
+                    <connections>
+                        <outlet property="actionButton" destination="Uk3-Ml-YsW" id="adJ-KE-nqk"/>
+                        <outlet property="dpLocationView" destination="krq-fN-TwY" id="AhO-HT-bgz"/>
+                        <outlet property="mapView" destination="cZi-Hu-9aA" id="Km9-A1-0No"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-975.36231884057975" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
